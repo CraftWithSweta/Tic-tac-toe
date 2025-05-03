@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* optional but recommended for layout consistency */
+}
+
+body {
+    background-image: url('star.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* 'cover' makes the image scale to cover the screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* full height viewport */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h3 {
+    color: #fbf6f6;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.info {
+    height: 320px;
+    width: 320px;
+    display: grid;
+    /* background: rgb(24, 12, 129); */
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    /* border: 5px solid rgb(24, 12, 129); */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5); */
+    border-radius: 5px;
+}
+
+.cell {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 215, 215);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgb(200, 200, 200);
+}
+.btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+   width: 100px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
