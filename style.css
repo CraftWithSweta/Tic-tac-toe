@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('star.jpg');
+    background-image: url('/src/star.jpg');
     background-repeat: no-repeat;
     background-size: cover; /* 'cover' makes the image scale to cover the screen */
     display: flex;
